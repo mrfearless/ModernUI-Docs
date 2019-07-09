@@ -1,4 +1,0 @@
-.. RadASM Support:
-==============
-RadASM Support
-==============

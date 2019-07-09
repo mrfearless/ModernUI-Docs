@@ -1,0 +1,48 @@
+.. _MUIGetExtProperty:
+
+========================
+MUIGetExtProperty 
+========================
+
+**MUIGetExtProperty, hControl:HWND, Property:SIZE_T**
+
+Get a specified property from the **external** properties structure. Properties are defined as constants (eg ``@MyPropertyX EQU 4``) and are offsets into the memory location used to store the properties value. See :ref:`MUIAllocMemProperties<MUIAllocMemProperties>` for details on allocating memory for properties.
+
+**Parameters**
+
+* [in] **hControl** - handle to the ModernUI control
+* [in] **Property** - The property to set
+
+**Return**
+
+Returns the property value or ``NULL``
+
+**Example**
+
+::
+
+   .data
+   ; Define external properties
+   @MyPropertyXcoord EQU 0
+   @MyPropertyYcoord EQU 4
+   @MyPropertyString EQU 8
+
+::
+
+   LOCAL dwX:DWORD
+   LOCAL dwY:DWORD
+   LOCAL lpszMyString:DWORD
+   
+   Invoke MUIGetExtProperty, hMyControl, @MyPropertyXcoord
+   mov dwX, eax
+
+   Invoke MUIGetExtProperty, hMyControl, @MyPropertyYcoord
+   mov dwY, eax
+   
+   Invoke MUIGetExtProperty, hMyControl, @MyPropertyString
+   mov lpszMyString, eax
+
+**See Also**
+
+:ref:`MUIAllocMemProperties<MUIAllocMemProperties>`, :ref:`MUISetExtProperty<MUISetExtProperty>`, :ref:`MUIGetIntProperty<MUIGetIntProperty>`, :ref:`MUISetIntProperty<MUISetIntProperty>`
+
