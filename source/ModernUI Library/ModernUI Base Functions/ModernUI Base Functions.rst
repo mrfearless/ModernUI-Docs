@@ -1,3 +1,5 @@
+.. _ModernUI Base Functions:
+
 =======================
 ModernUI Base Functions
 =======================
@@ -5,7 +7,6 @@ ModernUI Base Functions
 Contents:
 
 .. toctree::
-   :maxdepth: 3
 
    MUIGetIntProperty
    MUISetIntProperty

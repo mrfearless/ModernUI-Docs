@@ -1,62 +1,86 @@
-.. ModernUI_Button:
+.. _ModernUI_Button:
 
 ===============
 ModernUI_Button
 ===============
 
-.. image:: Button1.png
+.. image:: ModernUI_Button48x48.png
 
-A button control that allows for a lot of customization visually and in behaviour.
+The ModernUI_Button is a button control like the standard win32 button control, except it provides ease of use and more customizable features, like color of text, background, border, accent and colors for when the mouse moves over the control, or the control is in a selected state.
+
+Additionally images: icon, bitmap or png types, can be assigned to the ModernUI_Button control via the properties or by using one of the provided ModernUI_Button functions.
 
 --------------------------
 ModernUI_Button Functions
 --------------------------
 
 .. toctree::
+   :hidden:
+   :glob:
    
-   MUIButtonRegister
-   MUIButtonCreate
-   MUIButtonSetProperty
-   MUIButtonGetProperty
-   MUIButtonSetAllProperties
-   MUIButtonGetState
-   MUIButtonSetState
-   MUIButtonLoadImages
-   MUIButtonSetImages
-   MUIButtonNotifySetText
-   MUIButtonNotifyLoadImage
-   MUIButtonNotifySetImage
-   MUIButtonNotifySetFont
-   MUIButtonNotify
-   MUIButtonNoteSetText
-   MUIButtonNoteSetFont
+   MUIButton*
 
++-------------------------------------------------------------+-------------------------------------------------------------+
+| **Function**                                                | **Description**                                             |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonCreate<MUIButtonCreate>`                     | Creates a new ModernUI_Button control                       |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonGetProperty<MUIButtonGetProperty>`           | Gets the value of a property                                |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonGetState<MUIButtonGetState>`                 | Gets the current state: selected, unselected                |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonLoadImages<MUIButtonLoadImages>`             | Load images from resources and assign to the control        |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNoteSetFont<MUIButtonNoteSetFont>`           | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNoteSetText<MUIButtonNoteSetText>`           | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNotify<MUIButtonNotify>`                     | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNotifyLoadImage<MUIButtonNotifyLoadImage>`   | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNotifySetFont<MUIButtonNotifySetFont>`       | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNotifySetImage<MUIButtonNotifySetImage>`     | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonNotifySetText<MUIButtonNotifySetText>`       | *Depreciated*                                               |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonRegister<MUIButtonRegister>`                 | Registers a window class for the ModernUI_Button            |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonSetAllProperties<MUIButtonSetAllProperties>` | Sets all properties in one function using a structure       |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonSetImages<MUIButtonSetImages>`               | Assigns images (previously loaded) to the control           |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonSetProperty<MUIButtonSetProperty>`           | Sets the value of a property                                |
++-------------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUIButtonSetState<MUIButtonSetState>`                 | Sets the state: selected, unselected                        |
++-------------------------------------------------------------+-------------------------------------------------------------+
 
 --------------------------
 ModernUI_Button Messages
 --------------------------
 
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| **Message**                    | **wParam**               | **lParam**               | **Returns**              |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_GETSTATE                 | NULL                     | NULL                     | bState                   |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_SETSTATE                 | bState                   | NULL                     | None                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTIFYSETTEXT            | lpszNotifyText           | bRedraw                  | Bool                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTIFYSETIMAGE           | dwImageType              | hImage                   | Bool                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTIFYLOADIMAGE          | dwImageType              | ResourceID               | Bool                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTIFYSETFONT            | hFont                    | bRedraw                  | None                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTIFY                   | bNotify                  | NULL                     | None                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTESETTEXT              | lpszNoteText             | bRedraw                  | None                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
-| MUIBM_NOTESETFONT              | hFont                    | bRedraw                  | None                     |
-+--------------------------------+--------------------------+--------------------------+--------------------------+
++--------------------------------+-------------------------------------------------------------+
+| **Message**                    | **Description**                                             |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_GETSTATE                 | Gets the current state: selected, unselected                |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_SETSTATE                 | Sets the state: selected, unselected                        |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTIFYSETTEXT            | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTIFYSETIMAGE           | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTIFYLOADIMAGE          | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTIFYSETFONT            | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTIFY                   | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTESETTEXT              | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
+| MUIBM_NOTESETFONT              | *Depreciated*                                               |
++--------------------------------+-------------------------------------------------------------+
 
 
 --------------------------

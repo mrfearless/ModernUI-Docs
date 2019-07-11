@@ -5,7 +5,6 @@ ModernUI Library
 Contents:
 
 .. toctree::
-   :maxdepth: 3
 
    ModernUI Base Functions/ModernUI Base Functions
    ModernUI DPI Functions/ModernUI DPI Functions
@@ -18,3 +17,5 @@ Contents:
    ModernUI Region Functions/ModernUI Region Functions
    ModernUI Window Functions/ModernUI Window Functions
    ModernUI Macros/ModernUI Macros
+   ModernUI Library Data Types/ModernUI Library Data Types
+   ModernUI Library Structures/ModernUI Library Structures
