@@ -102,13 +102,13 @@ Alias for `HWND <https://docs.microsoft.com/en-us/windows/win32/winprog/windows-
 
 **MUIPROPERTIES**
 
-Enum for cbWndExtraOffset parameter of :ref:`MUIAllocMemProperties<MUIAllocMemProperties>` and :ref:`MUIFreeMemProperties<MUIFreeMemProperties>` functions
+For cbWndExtraOffset parameter of :ref:`MUIAllocMemProperties<MUIAllocMemProperties>` and :ref:`MUIFreeMemProperties<MUIFreeMemProperties>` functions: ``MUI_INTERNAL_PROPERTIES`` or ``MUI_EXTERNAL_PROPERTIES``
 
 .. _MUIPROPERTY:
 
 **MUIPROPERTY**
 
-Enum for a specific ModernUI Control's property, using the Property parameter of :ref:`MUIGetIntProperty<MUIGetIntProperty>`, :ref:`MUISetIntProperty<MUISetIntProperty>`, :ref:`MUIGetExtProperty<MUIGetExtProperty>` and :ref:`MUISetExtProperty<MUISetExtProperty>` functions
+Enum for a specific ModernUI Control's property, using the Property parameter of :ref:`MUIGetIntProperty<MUIGetIntProperty>`, :ref:`MUISetIntProperty<MUISetIntProperty>`, :ref:`MUIGetExtProperty<MUIGetExtProperty>` and :ref:`MUISetExtProperty<MUISetExtProperty>` functions. See specific control for a list of its defined properties
 
 .. _MUIPROPERTYVALUE:
 
@@ -132,19 +132,19 @@ A pointer to a :ref:`MUIVALUE<MUIVALUE>` value
 
 **MUIIT**
 
-Image type enum
+Image type: ``MUIIT_NONE``, ``MUIIT_BMP``, ``MUIIT_ICO`` or ``MUIIT_PNG``
 
 .. _MUIIL:
 
 **MUIIL**
 
-Image location enum
+Image location: ``MUIIL_CENTER``, ``MUIIL_BOTTOMLEFT``, ``MUIIL_BOTTOMRIGHT``, ``MUIIL_TOPLEFT``, ``MUIIL_TOPRIGHT``, ``MUIIL_TOPCENTER``, ``MUIIL_BOTTOMCENTER``
 
 .. _MUIPFS:
 
 **MUIPFS**
 
-Paint frame style enum for the FrameStyle parameter of the :ref:`MUIGDIPaintFrame<MUIGDIPaintFrame>` function
+Paint frame style flags for the FrameStyle parameter of the :ref:`MUIGDIPaintFrame<MUIGDIPaintFrame>` function using a combination of flags: ``MUIPFS_NONE``, ``MUIPFS_LEFT``, ``MUIPFS_TOP``, ``MUIPFS_BOTTOM``, ``MUIPFS_RIGHT`` or ``MUIPFS_ALL``
 
 .. _MUICOLORRGB:
 

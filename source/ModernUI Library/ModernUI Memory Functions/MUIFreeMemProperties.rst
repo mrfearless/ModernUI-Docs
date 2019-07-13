@@ -4,7 +4,7 @@
 MUIFreeMemProperties 
 ========================
 
-**MUIFreeMemProperties, hControl:HWND, cbWndExtraOffset:SIZE_T**
+MUIFreeMemProperties, hWin::ref:`MUIWND<MUIWND>`, cbWndExtraOffset::ref:`MUIPROPERTIES<MUIPROPERTIES>`
 
 Frees memory allocated via the :ref:`MUIAllocMemProperties<MUIAllocMemProperties>` function. Used at the `WM_DESTROY <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-destroy>`_ or `WM_NCDESTROY <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-ncdestroy>`_ event. Make sure any cleanup routines are called before freeing any memory.
 

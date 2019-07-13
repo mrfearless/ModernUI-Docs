@@ -4,7 +4,7 @@
 MUIPointSizeToLogicalUnit 
 =========================
 
-**MUIPointSizeToLogicalUnit, hWin:HWND, PointSize:SIZE_T**
+MUIPointSizeToLogicalUnit, hWin::ref:`MUIWND<MUIWND>`, PointSize::ref:`MUIVALUE<MUIVALUE>`
 
 Convert font point size eg ``12`` to logical unit size for use with `CreateFont <https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-createfonta>`_ or `CreateFontIndirect <https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-createfontindirecta>`_
 

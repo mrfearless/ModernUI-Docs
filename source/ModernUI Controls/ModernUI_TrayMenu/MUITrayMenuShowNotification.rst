@@ -1,8 +1,8 @@
 .. _MUITrayMenuShowNotification:
 
-========================
-MUITrayMenuShowNotification 
-========================
+===========================
+MUITrayMenuShowNotification
+===========================
 
 **MUITrayMenuShowNotification**
 

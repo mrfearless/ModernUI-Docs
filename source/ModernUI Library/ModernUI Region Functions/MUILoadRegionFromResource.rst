@@ -4,7 +4,7 @@
 MUILoadRegionFromResource 
 =========================
 
-**MUILoadRegionFromResource, hInst:HINSTANCE, idRgnRes:SIZE_T, lpRegionData:DWORD_PTR, lpSizeRegion:DWORD_PTR**
+MUILoadRegionFromResource, hInst:HINSTANCE, idRgnRes::ref:`RESID<RESID>`, lpRegionData::ref:`POINTER<POINTER>`, lpSizeRegionData::ref:`LPMUIVALUE<LPMUIVALUE>` 
 
 Loads region data from a resource, stored as ``RC_DATA``.
 

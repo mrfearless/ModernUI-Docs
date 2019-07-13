@@ -1,8 +1,8 @@
 .. _MUITrayMenuSetMenuItemText:
 
-========================
+==========================
 MUITrayMenuSetMenuItemText 
-========================
+==========================
 
 **MUITrayMenuSetMenuItemText**
 

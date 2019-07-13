@@ -4,7 +4,7 @@
 MUIGDIPaintFill 
 ========================
 
-**MUIGDIPaintFill, hdc:HDC, lpFillRect:LPRECT, FillColor:COLORREF**
+MUIGDIPaintFill, hdc:`HDC <https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types>`_, lpFillRect::ref:`LPRECT<LPRECT>`, FillColor::ref:`MUICOLORRGB<MUICOLORRGB>`
 
 Fills a rectangle, as specified by the **lpFillRect** parameter which points to a ``RECT``, with **FillColor** which is a specific ``COLORREF`` color, to a ``HDC`` as specified by **hdc**.
 

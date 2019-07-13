@@ -4,7 +4,7 @@
 MUIGDIPlusRotateCenterImage 
 ===========================
 
-**MUIGDIPlusRotateCenterImage, hImage:HANDLE, fAngle:REAL4**
+MUIGDIPlusRotateCenterImage, hImage::ref:`GPIMAGE<GPIMAGE>`, fAngle:REAL4
 
 Rotates a **GDI+** image **hImage** around its center. **fAngle** is a ``REAL4`` value indicating the angle in degrees to rotate the original **hImage** by.
 

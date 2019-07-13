@@ -4,28 +4,30 @@
 MUITextCreate 
 ========================
 
-**MUITextCreate, hWndParent:DWORD, lpszText:DWORD, xpos:DWORD, ypos:DWORD, controlwidth:DWORD, controlheight:DWORD, dwResourceID:DWORD, dwStyle:DWORD**
+MUITextCreate, hWndParent::ref:`MUIWND<MUIWND>`, lpszText:LPSTR, X::ref:`MUIVALUE<MUIVALUE>`, Y::ref:`MUIVALUE<MUIVALUE>`, nWidth::ref:`MUIVALUE<MUIVALUE>`, nHeight::ref:`MUIVALUE<MUIVALUE>`, ResourceID::ref:`RESID<RESID>`, Style::ref:`MUIVALUE<MUIVALUE>`
 
-Creates a new ModernUI Text control.
+Creates a new ModernUI_Text control.
 
 **Parameters**
 
 * [in] **hWndParent** - parent window of control
 * [in] **lpszText** - text to display
-* [in] **xpos** - x coord of control
-* [in] **ypos** - y coord of control
-* [in] **controlwidth** - width of control
-* [in] **controlheight** - height of control
-* [in] **dwResourceID** - resource id of control
-* [in] **dwStyle** - can be combination of style flags, see notes for details
+* [in] **X** - x coord of control
+* [in] **Y** - y coord of control
+* [in] **nWidth** - width of control
+* [in] **nHeight** - height of control
+* [in] **ResourceID** - resource id of control
+* [in] **Style** - can be combination of style flags, see :ref:`ModernUI_Text Style Flags<ModernUI_Text Style Flags>` for details
 
 **Return**
 
-Returns handle to newly created control if successful, or ``NULL`` otherwise
+Returns handle to newly created ModernUI_Text control (``MUIWND``) if successful, or ``NULL`` otherwise
 
-**Notes**
+.. _ModernUI_Text Style Flags:
 
-The following combination of flags can be specified for **dwStyle:**
+**ModernUI_Text Style Flags**
+
+The following combination of flags can be specified for **Style:**
 
 *Font size style flags (a single flag from this group):*
 
@@ -91,5 +93,5 @@ The following combination of flags can be specified for **dwStyle:**
 
 **See Also**
 
-:ref:`MUITextRegister<MUITextRegister>`, :ref:`MUITextSetProperty<MUITextSetProperty, :ref:`MUITextGetProperty<MUITextGetProperty>`
+:ref:`MUITextRegister<MUITextRegister>`, :ref:`MUITextSetProperty<MUITextSetProperty>`, :ref:`MUITextGetProperty<MUITextGetProperty>`
 

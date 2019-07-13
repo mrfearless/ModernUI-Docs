@@ -1,3 +1,5 @@
+.. _ModernUI x64 Build:
+
 ==================
 ModernUI x64 Build
 ==================
@@ -14,7 +16,8 @@ The ModernUI Library consists of two files:
 * ModernUI.asm
 
 Building with Microsoft UASM (UASM64.EXE):
-::
+
+.. code-block:: text
 
    UASM64.EXE /c -win64 -Zp8 /win64 /D_WIN64 /Cp /nologo /I"X:\UASM\Include" ModernUI.asm
 
@@ -23,7 +26,7 @@ Building with Microsoft UASM (UASM64.EXE):
 
 Linking with Microsoft Library Manager (LIB.EXE):
 
-::
+.. code-block:: text
 
    LIB /LIBPATH:"X:\UASM\lib\x64" *.obj /out:ModernUI.lib
 
@@ -41,7 +44,7 @@ Each ModernUI Control consists of two files:
 
 Building with Microsoft UASM (UASM64.EXE):
 
-::
+.. code-block:: text
 
    UASM64.EXE /c -win64 -Zp8 /win64 /D_WIN64 /Cp /nologo /I"X:\MASM32\Include" ModernUI_Control.asm
 
@@ -50,7 +53,7 @@ Building with Microsoft UASM (UASM64.EXE):
 
 Linking with Microsoft Library Manager (LIB.EXE):
 
-::
+.. code-block:: text
 
    LIB /LIBPATH:"X:\UASM\lib\x64" *.obj /out:ModernUI_Control.lib
 
@@ -63,12 +66,12 @@ Debug x64 Builds
 
 To build the ModernUI Library and/or a ModernUI Control with debug information, supply the additional flag options /Zi /Zd on the command line for UASM64 (UASM64.EXE) like so:
 
-::
+.. code-block:: text
 
    UASM64.EXE /c -win64 -Zp8 /win64 /D_WIN64 /Cp /nologo /Zi /Zd /I"X:\UASM\Include" ModernUI.asm
 
 
-::
+.. code-block:: text
 
    UASM64.EXE /c -win64 -Zp8 /win64 /D_WIN64 /Cp /nologo /Zi /Zd  /I"X:\UASM\Include" ModernUI_Control.asm
 
@@ -77,7 +80,7 @@ To build the ModernUI Library and/or a ModernUI Control with debug information, 
 
 Linking with Microsoft Library Manager (LIB.EXE):
 
-::
+.. code-block:: text
 
    LIB /LIBPATH:"X:\UASM\lib\x64" *.obj /out:ModernUI_Control.lib
 

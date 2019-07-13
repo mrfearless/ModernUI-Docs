@@ -1,8 +1,8 @@
 .. _MUIRegionButtonGetProperty:
 
-========================
+==========================
 MUIRegionButtonGetProperty 
-========================
+==========================
 
 **MUIRegionButtonGetProperty**
 

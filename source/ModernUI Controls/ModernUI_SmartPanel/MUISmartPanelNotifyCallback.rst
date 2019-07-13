@@ -1,8 +1,8 @@
 .. _MUISmartPanelNotifyCallback:
 
-========================
+===========================
 MUISmartPanelNotifyCallback 
-========================
+===========================
 
 **MUISmartPanelNotifyCallback**
 

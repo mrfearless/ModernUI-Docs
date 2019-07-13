@@ -4,16 +4,16 @@
 MUIGDIPlusPaintFill 
 ========================
 
-**MUIGDIPlusPaintFill, pGraphics:HANDLE, lpFillRect:LPGDIRECT, FillColor:SIZE_T**
+MUIGDIPlusPaintFill, pGraphics::ref:`GPGRAPHICS<GPGRAPHICS>`, lpFillGdipRect::ref:`LPGPRECT<LPGPRECT>`, FillColor::ref:`MUICOLORARGB<MUICOLORARGB>`
 
-Fills a rectangle, as specified by the **lpFillRect** parameter which points to a ``GDIRECT``, with **FillColor** which is a specific ARGB color, to a graphics context as specified by **pGraphics**. Note: a ``RECT`` can be converted to the ``GDIRECT`` using the :ref:`MUIGDIPlusRectToGdipRect<MUIGDIPlusRectToGdipRect>` function.
+Fills a rectangle, as specified by the **lpFillRect** parameter which points to a ``GDIPRECT``, with **FillColor** which is a specific ARGB color, to a graphics context as specified by **pGraphics**. Note: a ``RECT`` can be converted to the :ref:`GDIPRECT<GDIPRECT>` using the :ref:`MUIGDIPlusRectToGdipRect<MUIGDIPlusRectToGdipRect>` function.
 
 
 **Parameters**
 
 * [in] **pGraphics** - graphics context to paint the filled rectangle to
-* [in] **lpFillRect** - points to a ``GDIRECT`` that defines area to paint fill
-* [in] **FillColor** - color to paint fill
+* [in] **lpFillRect** - points to a ``GDIPRECT`` that defines area to paint fill
+* [in] **FillColor** - ARGB color to paint fill
 
 
 **Return**
@@ -36,7 +36,7 @@ None
    LOCAL hdc:HDC
    LOCAL pGraphics:DWORD
    LOCAL rect:RECT
-   LOCAL gdirect:GDIRECT
+   LOCAL gdiprect:GDIPRECT
    LOCAL BackColor:DWORD
 
    Invoke BeginPaint, hWin, Addr ps
@@ -46,13 +46,13 @@ None
    Invoke GdipCreateFromHDC, hdc, Addr pGraphics
    
    Invoke GetClientRect, hWin, Addr rect
-   Invoke MUIGDIPlusRectToGdipRect, Addr rect, Addr gdirect
+   Invoke MUIGDIPlusRectToGdipRect, Addr rect, Addr gdiprect
    
    mov BackColor, MUI_ARGBCOLOR(255, 127, 200, 240)
    
-   Invoke MUIGDIPlusPaintFill, pGraphics, Addr gdirect, BackColor
+   Invoke MUIGDIPlusPaintFill, pGraphics, Addr gdiprect, BackColor
 
 **See Also**
 
-:ref:`MUIGDIPlusPaintFillI<MUIGDIPlusPaintFillI>`, :ref:`MUIGDIPlusPaintFrame<MUIGDIPlusPaintFrame>`, :ref:`MUIGDIPlusPaintFrameI<MUIGDIPlusPaintFrameI>`, :ref:`MUI_ARGBCOLOR<MUI_ARGBCOLOR>`, :ref:`MUIGDIPlusRectToGdipRect<MUIGDIPlusRectToGdipRect>`
+:ref:`MUIGDIPlusPaintFillI<MUIGDIPlusPaintFillI>`, :ref:`MUIGDIPlusPaintFrame<MUIGDIPlusPaintFrame>`, :ref:`MUIGDIPlusPaintFrameI<MUIGDIPlusPaintFrameI>`, :ref:`MUI_ARGBCOLOR<MUI_ARGBCOLOR>`, :ref:`MUIGDIPlusRectToGdipRect<MUIGDIPlusRectToGdipRect>`, :ref:`GDIPRECT<GDIPRECT>`
 

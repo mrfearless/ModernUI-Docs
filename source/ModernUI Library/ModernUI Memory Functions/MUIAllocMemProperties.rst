@@ -4,13 +4,13 @@
 MUIAllocMemProperties 
 ========================
 
-**MUIAllocMemProperties, hControl:HWND, cbWndExtraOffset:SIZE_T, SizeToAllocate:SIZE_T**
+MUIAllocMemProperties, hWin::ref:`MUIWND<MUIWND>`, cbWndExtraOffset::ref:`MUIPROPERTIES<MUIPROPERTIES>`, SizeToAllocate::ref:`MUIVALUE<MUIVALUE>`
 
 Allocates memory for the internal or external properties storage - typically during `WM_CREATE <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-create>`_ event and this memory is freed by a call to the :ref:`MUIFreeMemProperties<MUIFreeMemProperties>` function during `WM_DESTROY <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-destroy>`_ or `WM_NCDESTROY <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-ncdestroy>`_ event.
 
 **Parameters**
 
-* [in] **hControl** - handle to the ModernUI control
+* [in] **hWin** - handle to the ModernUI control
 * [in] **cbWndExtraOffset** - offset in the `WNDCLASS.cbWndExtra  <https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-tagwndclassa>`_ memory location. For ease of use, the following constants can be used: ``MUI_INTERNAL_PROPERTIES`` or ``MUI_EXTERNAL_PROPERTIES``
 * [in] **SizeToAllocate** - size of memory block
 

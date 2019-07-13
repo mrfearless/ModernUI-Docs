@@ -4,28 +4,28 @@
 MUIButtonCreate 
 ========================
 
-**MUIButtonCreate, hWndParent:DWORD, lpszText:DWORD, xpos:DWORD, ypos:DWORD, controlwidth:DWORD, controlheight:DWORD, dwResourceID:DWORD, dwStyle:DWORD**
+MUIButtonCreate, hWndParent::ref:`MUIWND<MUIWND>`, lpszText:LPSTR, X::ref:`MUIVALUE<MUIVALUE>`, Y::ref:`MUIVALUE<MUIVALUE>`, nWidth::ref:`MUIVALUE<MUIVALUE>`, nHeight::ref:`MUIVALUE<MUIVALUE>`, ResourceID::ref:`RESID<RESID>`, Style::ref:`MUIVALUE<MUIVALUE>`
 
-Creates a new ModernUI Button control.
+Creates a new ModernUI_Button control.
 
 **Parameters**
 
 * [in] **hWndParent** - parent window of control
 * [in] **lpszText** - text to display
-* [in] **xpos** - x coord of control
-* [in] **ypos** - y coord of control
-* [in] **controlwidth** - width of control
-* [in] **controlheight** - height of control
-* [in] **dwResourceID** - resource id of control
-* [in] **dwStyle** - can be combination of style flags, see notes for details
+* [in] **X** - x coord of control
+* [in] **Y** - y coord of control
+* [in] **nWidth** - width of control
+* [in] **nHeight** - height of control
+* [in] **ResourceID** - resource id of control
+* [in] **Style** - can be combination of style flags, see :ref:`ModernUI_Button Style Flags<ModernUI_Button Style Flags>` for details
 
 **Return**
 
-Returns handle to newly created control if successful, or ``NULL`` otherwise
+Returns handle to newly created ModernUI_Button control (``MUIWND``) if successful, or ``NULL`` otherwise
 
-**Notes**
+.. _ModernUI_Button Style Flags:
 
-*dwStyle - style flags:*
+**ModernUI_Button Style Flags**
 
 * ``MUIBS_LEFT`` - Align text to the left of the button
 * ``MUIBS_BOTTOM`` - Place image at the top, and text below
@@ -47,5 +47,5 @@ Returns handle to newly created control if successful, or ``NULL`` otherwise
 
 **See Also**
 
-:ref:`MUIButtonRegister<MUIButtonRegister>`
+:ref:`MUIButtonRegister<MUIButtonRegister>`, :ref:`MUIButtonGetProperty<MUIButtonGetProperty>`,  :ref:`MUIButtonSetProperty<MUIButtonSetProperty>`
 

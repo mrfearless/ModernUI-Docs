@@ -1,8 +1,8 @@
 .. _MUITrayMenuChangeMenuItemState:
 
-========================
+==============================
 MUITrayMenuChangeMenuItemState 
-========================
+==============================
 
 **MUITrayMenuChangeMenuItemState**
 

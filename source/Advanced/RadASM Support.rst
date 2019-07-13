@@ -1,3 +1,5 @@
+.. _RadASM Support:
+
 ==============
 RadASM Support
 ==============
@@ -16,6 +18,7 @@ MASM32 x86 assembler auto-complete / intellisense files:
 * masmApiConst.api.txt
 * masmApiStruct.api.txt
 * masmMessage.api.txt
+* masmType.api.txt
 
 UASM x64 assembler auto-complete / intellisense files:
 
@@ -23,6 +26,7 @@ UASM x64 assembler auto-complete / intellisense files:
 * Uasm64ApiConst.api.txt
 * Uasm64ApiStruct.api.txt
 * Uasm64Message.api.txt
+* Uasm64Type.api.txt
 
 Each ``.api.txt`` file can be opened and the contents copied and pasted into a corresponding ``.api`` file found under the RadASM folder for the particular assembler. Once RadASM is restarted it will read these files and provide the auto-complete / intellisense for ModernUI functions.
 
@@ -52,7 +56,7 @@ The current ModernUI controls that have a RadASM IDE control are:
 
 Once completed it should look something like this:
 
-::
+.. code-block:: text
 
    [CustCtrl]
    1=RAMUIButton.dll
@@ -127,7 +131,7 @@ or
 
 The UASM assembler and all related files (includes, libs, x64 libs, other binaries) should be placed in the appropriate folders so that your installation matches the following folder structure:
 
-::
+.. code-block:: text
 
    \UASM\bin
    \UASM\include
@@ -137,10 +141,29 @@ The UASM assembler and all related files (includes, libs, x64 libs, other binari
 
 To add support for the UASM assembler to RadASM download and extract the `UASM with RadASM <https://github.com/mrfearless/UASM-with-RadASM>`_ package and edit the **RadASM.ini** file to add UASM32 and UASM64 to the Assembler entry under the Assembler section:
 
-::
+.. code-block:: text
 
    [Assembler]
    Assembler=masm,UASM32,UASM64,JWasm,GoAsm,fasm,nasm,html
 
 
 The RadASM projects for the ModernUI x64 Library and ModernUI x64 Controls should now assemble if all the above steps have been taken.
+
+
+---------------------------------------
+RadASM Colorized ModernUI Library Types
+---------------------------------------
+
+To add syntax color highlighting to the ModernUI library data types, open the RadASM assembler ini files: **masm.ini** and/or **uasm64.ini** and go to the following text section:
+
+.. code-block:: text
+
+   [KeyWords]
+   C6=
+
+Append the following data types text to the ``C6`` key in the ``KeyWords`` section:
+
+.. code-block:: text
+
+   ^HDC ^HBITMAP ^HFONT ^HICON ^HANDLE ^HBRUSH ^HPEN ^MUIWND ^MUIPROPERTIES ^MUIPROPERTY ^MUIPROPERTYVALUE ^MUIVALUE ^LPMUIVALUE ^MUIIT ^MUIIL ^MUIPFS ^MUIIMAGE ^LPMUIIMAGE ^MUICOLORRGB ^MUICOLORARGB ^GPGRAPHICS ^LPGPGRAPHICS ^GPIMAGE ^LPGPIMAGE ^GPRECT ^LPGPRECT ^LPGDIPRECT ^LPRECT ^LPHBITMAP ^LPHDC ^POINTER ^RESID
+

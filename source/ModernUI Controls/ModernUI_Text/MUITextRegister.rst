@@ -4,9 +4,9 @@
 MUITextRegister 
 ========================
 
-**MUITextRegister**
+MUITextRegister
 
-Registers the window class for the ModernUI_Text control. This allows the control to be created via `CreateWindowEx <https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa>`_ by specifying the class as '*ModernUI_Text*' and/or by the dialog manager when instantiating a new dialog with resources - if a custom control is using a class as '*ModernUI_Text*'.
+Registers the ModernUI_Text class, which allows the control to be created via dialog resources or via `CreateWindowEx <https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa>`_ and specifying the classname 'ModernUI_Text'. If using the RadASM custom class control instead of a the ModernUI RadASM Design Time Controls specify 'ModernUI_Text' as the classname
 
 **Parameters**
 
@@ -14,7 +14,7 @@ None
 
 **Return**
 
-Returns ``TRUE`` if successful, or ``FALSE`` otherwise
+None
 
 **Example**
 
@@ -24,5 +24,5 @@ Returns ``TRUE`` if successful, or ``FALSE`` otherwise
 
 **See Also**
 
-:ref:`MUITextCreate<MUITextCreate>`
+:ref:`MUITextCreate<MUITextCreate>`, :ref:`MUITextGetProperty<MUITextGetProperty>`,  :ref:`MUITextSetProperty<MUITextSetProperty>`
 

@@ -4,7 +4,7 @@
 MUIGDIPlusDoubleBufferFinish 
 ============================
 
-**MUIGDIPlusDoubleBufferFinish, hWin:HWND, pGraphics:HANDLE, hBitmap:HANDLE, pGraphicsBuffer:HANDLE**
+MUIGDIPlusDoubleBufferFinish, hWin::ref:`MUIWND<MUIWND>`, pGraphics::ref:`GPGRAPHICS<GPGRAPHICS>`, pBitmap::ref:`GPIMAGE<GPIMAGE>`, pGraphicsBuffer::ref:`GPGRAPHICS<GPGRAPHICS>`
 
 Finish Double Buffering for **GDI+** & copy finished pGraphicsBuffer to pGraphics (HDC). Used in a `WM_PAINT <https://docs.microsoft.com/en-us/windows/win32/gdi/wm-paint>`_ event. Place before `EndPaint <https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-endpaint>`_
 

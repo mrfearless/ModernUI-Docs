@@ -4,7 +4,7 @@
 MUICenterWindow 
 ========================
 
-**MUICenterWindow, hWndChild:HWND, hWndParent:HWND**
+MUICenterWindow, hWndChild::ref:`MUIWND<MUIWND>`, hWndParent::ref:`MUIWND<MUIWND>`
 
 Center a child window **hWndChild** into parent window **hWndParent** (or desktop if **hWndParent** is ``NULL``). Parent doesn't need to be the owner.
 

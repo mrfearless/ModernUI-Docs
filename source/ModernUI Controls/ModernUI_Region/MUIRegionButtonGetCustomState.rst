@@ -1,8 +1,8 @@
 .. _MUIRegionButtonGetCustomState:
 
-========================
+=============================
 MUIRegionButtonGetCustomState 
-========================
+=============================
 
 **MUIRegionButtonGetCustomState**
 

@@ -1,8 +1,8 @@
 .. _MUITrayIconSetTrayIconText:
 
-========================
+==========================
 MUITrayIconSetTrayIconText 
-========================
+==========================
 
 **MUITrayIconSetTrayIconText**
 

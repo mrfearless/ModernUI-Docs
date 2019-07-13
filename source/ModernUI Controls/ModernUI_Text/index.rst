@@ -36,6 +36,7 @@ ModernUI_Text Functions
 +-------------------------------------------------------------+-------------------------------------------------------------+
 
 
+.. _ModernUI_Text Properties:
 
 -------------------------------
 ModernUI_Text Properties
@@ -46,17 +47,17 @@ ModernUI_Text Properties
 +-------------------------------------------------------------------+--------------------------+
 | :ref:`@TextFont<TextFontProperty>`                                | ``HFONT``                |
 +-------------------------------------------------------------------+--------------------------+
-| :ref:`@TextColor<TextColorProperty>`                              | ``COLORREF``             |
+| :ref:`@TextColor<TextColorProperty>`                              | ``MUICOLORRGB``          |
 +-------------------------------------------------------------------+--------------------------+
-| :ref:`@TextColorAlt<TextColorAltProperty>`                        | ``COLORREF``             |
+| :ref:`@TextColorAlt<TextColorAltProperty>`                        | ``MUICOLORRGB``          |
 +-------------------------------------------------------------------+--------------------------+
-| :ref:`@TextColorDisabled<TextColorDisabledProperty>`              | ``COLORREF``             |
+| :ref:`@TextColorDisabled<TextColorDisabledProperty>`              | ``MUICOLORRGB``          |
 +-------------------------------------------------------------------+--------------------------+
-| :ref:`@TextBackColor<TextBackColorProperty>`                      | ``COLORREF``             |
+| :ref:`@TextBackColor<TextBackColorProperty>`                      | ``MUICOLORRGB``          |
 +-------------------------------------------------------------------+--------------------------+
-| :ref:`@TextBackColorAlt<TextBackColorAltProperty>`                | ``COLORREF``             |
+| :ref:`@TextBackColorAlt<TextBackColorAltProperty>`                | ``MUICOLORRGB``          |
 +-------------------------------------------------------------------+--------------------------+
-| :ref:`@TextBackColorDisabled<TextBackColorDisabledProperty>`      | ``COLORREF``             |
+| :ref:`@TextBackColorDisabled<TextBackColorDisabledProperty>`      | ``MUICOLORRGB``          |
 +-------------------------------------------------------------------+--------------------------+
 
 
@@ -74,35 +75,35 @@ Font used for ModernUI_Text control text
 
 **@TextColor**
    
-Text color of the ModernUI_Text control
+Text color (:ref:`MUICOLORRGB<MUICOLORRGB>`) of the ModernUI_Text control
 
 .. _TextColorAltProperty:
 
 **@TextColorAlt**
 
-Text color when mouse moves over ModernUI_Text control
+Text color (:ref:`MUICOLORRGB<MUICOLORRGB>`) when mouse moves over ModernUI_Text control
 
 .. _TextColorDisabledProperty:
 
 **@TextColorDisabled**
 
-Text color when ModernUI_Text control is disabled
+Text color (:ref:`MUICOLORRGB<MUICOLORRGB>`) when ModernUI_Text control is disabled
 
 .. _TextBackColorProperty:
 
 **@TextBackColor**
 
-Background color of the ModernUI_Text control. For transparency use ``-1``
+Background (:ref:`MUICOLORRGB<MUICOLORRGB>`) color of the ModernUI_Text control. For transparency use ``-1``
 
 .. _TextBackColorAltProperty:
 
 **@TextBackColorAlt**
 
-Background color when mouse moves over ModernUI_Text control
+Background (:ref:`MUICOLORRGB<MUICOLORRGB>`) color when mouse moves over ModernUI_Text control
 
 .. _TextBackColorDisabledProperty:
 
 **@TextBackColorDisabled**
 
-Background color when ModernUI_Text control is disabled
+Background (:ref:`MUICOLORRGB<MUICOLORRGB>`) color when ModernUI_Text control is disabled
 

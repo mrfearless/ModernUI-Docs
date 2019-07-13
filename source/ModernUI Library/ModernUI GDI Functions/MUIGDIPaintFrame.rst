@@ -4,7 +4,7 @@
 MUIGDIPaintFrame
 ========================
 
-**MUIGDIPaintFrame, hdc:HDC, lpFrameRect:LPRECT, FrameColor:COLORREF, FrameStyle:SIZE_T**
+MUIGDIPaintFrame, hdc:`HDC <https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types>`_, lpFrameRect::ref:`LPRECT<LPRECT>`, FrameColor::ref:`MUICOLORRGB<MUICOLORRGB>`, FrameStyle::ref:`MUIPFS<MUIPFS>`
 
 Draws a border (or parts of) around a rectangle, as specified by the **lpFrameRect** parameter which points to a ``RECT``, with **FrameColor** which is a specific ``COLORREF`` color, to a ``HDC`` as specified by **hdc**.
 

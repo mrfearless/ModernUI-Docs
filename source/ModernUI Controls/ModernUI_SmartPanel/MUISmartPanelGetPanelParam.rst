@@ -1,8 +1,8 @@
 .. _MUISmartPanelGetPanelParam:
 
-========================
+==========================
 MUISmartPanelGetPanelParam 
-========================
+==========================
 
 **MUISmartPanelGetPanelParam**
 

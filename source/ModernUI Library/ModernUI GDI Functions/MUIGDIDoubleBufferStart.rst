@@ -4,7 +4,7 @@
 MUIGDIDoubleBufferStart 
 ========================
 
-**MUIGDIDoubleBufferStart, hWin:HWND, hdcSource:HDC, lpHDCBuffer:LPHANDLE, lpClientRect:LPRECT, lphBufferBitmap:LPHANDLE**
+MUIGDIDoubleBufferStart, hWin::ref:`MUIWND<MUIWND>`, hdcSource:`HDC <https://docs.microsoft.com/en-us/windows/win32/winprog/windows-data-types>`_, lpHDCBuffer::ref:`LPHDC<LPHDC>`, lpClientRect::ref:`LPRECT<LPRECT>`, lphBufferBitmap::ref:`LPHBITMAP<LPHBITMAP>`
 
 Starts double buffering. Used in a `WM_PAINT <https://docs.microsoft.com/en-us/windows/win32/gdi/wm-paint>`_ event. Place after `BeginPaint <https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-beginpaint.html>`_  call. **lpHDCBuffer** points to a variable used to store the ``HDC`` of the double buffer (eg. hdcMem). **lpClientRect** points to a ``RECT`` structure used to store the client rectangle. **lphBufferBitmap** points to a variable used to store the double buffer ``HBITMAP``.
 

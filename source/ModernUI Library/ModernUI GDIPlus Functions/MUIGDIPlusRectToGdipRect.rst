@@ -4,7 +4,7 @@
 MUIGDIPlusRectToGdipRect 
 ========================
 
-**MUIGDIPlusRectToGdipRect, lpRect:LPRECT, lpGdipRect:LPGDIRECT**
+MUIGDIPlusRectToGdipRect, lpRect::ref:`LPRECT<LPRECT>`, lpGdipRect::ref:`LPGPRECT<LPGPRECT>`
 
 Convert a ``RECT`` structure to a ``GDIPRECT`` structure.
 
@@ -38,5 +38,5 @@ None
 
 **See Also**
 
-:ref:`MUIGDIPlusPaintFill<MUIGDIPlusPaintFill>`, :ref:`MUIGDIPlusPaintFrame<MUIGDIPlusPaintFrame>`
+:ref:`MUIGDIPlusPaintFill<MUIGDIPlusPaintFill>`, :ref:`MUIGDIPlusPaintFrame<MUIGDIPlusPaintFrame>`, :ref:`GDIPRECT<GDIPRECT>`
 

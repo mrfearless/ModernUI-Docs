@@ -1,8 +1,8 @@
 .. _MUICaptionBarLoadIconsDll:
 
-========================
+=========================
 MUICaptionBarLoadIconsDll 
-========================
+=========================
 
 **MUICaptionBarLoadIconsDll**
 

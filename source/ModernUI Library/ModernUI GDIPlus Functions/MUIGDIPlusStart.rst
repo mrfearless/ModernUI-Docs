@@ -4,7 +4,7 @@
 MUIGDIPlusStart 
 ========================
 
-**MUIGDIPlusStart**
+MUIGDIPlusStart
 
 Start of ModernUI **GDI+** framework (wrapper for `GdiplusStartup <https://docs.microsoft.com/en-us/windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup>`_). Placed at start of program before WinMain call or during creation of a ModernUI control during a `WM_CREATE <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-create>`_ event.
 

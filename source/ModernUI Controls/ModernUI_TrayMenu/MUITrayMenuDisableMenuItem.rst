@@ -1,8 +1,8 @@
 .. _MUITrayMenuDisableMenuItem:
 
-========================
+==========================
 MUITrayMenuDisableMenuItem 
-========================
+==========================
 
 **MUITrayMenuDisableMenuItem**
 

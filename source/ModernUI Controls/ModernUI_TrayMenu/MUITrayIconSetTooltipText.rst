@@ -1,8 +1,8 @@
 .. _MUITrayIconSetTooltipText:
 
-========================
+=========================
 MUITrayIconSetTooltipText 
-========================
+=========================
 
 **MUITrayIconSetTooltipText**
 

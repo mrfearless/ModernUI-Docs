@@ -1,8 +1,8 @@
 .. _MUIProgressDotsAnimateStart:
 
-========================
+===========================
 MUIProgressDotsAnimateStart 
-========================
+===========================
 
 **MUIProgressDotsAnimateStart**
 

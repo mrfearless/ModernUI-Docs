@@ -4,7 +4,7 @@
 MUISetRegionFromResource 
 ========================
 
-**MUISetRegionFromResource, hWin:HWND, idRgnRes:SIZE_T, lpCopyRgn:DWORD_PTR, bRedraw:BOOL**
+MUISetRegionFromResource, hWin::ref:`MUIWND<MUIWND>`, idRgnRes::ref:`RESID<RESID>`, lpCopyRgnHandle::ref:`LPMUIVALUE<LPMUIVALUE>`, bRedraw:BOOL
 
 Sets a window/controls region from a region stored as an ``RC_DATA`` resource: **idRgnRes**. If **lpdwCopyRgn** is not ``NULL`` a copy of region handle is provided (for any future calls to `FrameRgn <https://docs.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-framergn>`_ for example). This function internally calls the :ref:`MUILoadRegionFromResource<MUILoadRegionFromResource>` function.
 

@@ -4,14 +4,14 @@
 MUIGetParentRelativeWindowRect 
 ==============================
 
-**MUIGetParentRelativeWindowRect, hControl:HWND, lpRectControl:DWORD_PTR**
+MUIGetParentRelativeWindowRect, hWin::ref:`MUIWND<MUIWND>`, lpRectControl::ref:`LPRECT<LPRECT>`
 
 Get rectangle of a window/control relative to it's parent.
 
 **Parameters**
 
-* [in] **hControl** - handle to the window to map the ``RECT`` (relative to it's parent) passed as the **lpRectControl** variable
-* [in|out] **lpRectControl** - pointer to a ``RECT`` variable used to pass and store the rectangle to be adjusted relative to the parent of **hControl**
+* [in] **hWin** - handle to the window to map the ``RECT`` (relative to it's parent) passed as the **lpRectControl** variable
+* [in|out] **lpRectControl** - pointer to a ``RECT`` variable used to pass and store the rectangle to be adjusted relative to the parent of **hWin**
 
 
 **Return**

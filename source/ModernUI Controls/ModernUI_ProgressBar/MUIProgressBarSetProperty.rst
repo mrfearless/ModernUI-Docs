@@ -1,8 +1,8 @@
 .. _MUIProgressBarSetProperty:
 
-========================
+=========================
 MUIProgressBarSetProperty 
-========================
+=========================
 
 **MUIProgressBarSetProperty**
 

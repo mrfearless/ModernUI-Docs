@@ -1,3 +1,5 @@
+.. _Developers:
+
 ==========
 Developers
 ==========
@@ -37,9 +39,12 @@ To set property values for a control the ``MUI_SETPROPERTY`` message is used, ``
 
 Example using an imaginary control that has a ``@TextColor`` property (defined in an include file) that allows the user to change the text color of the control:
 
+
 ::
 
+
    Invoke SendMessage, hModernUIControl, MUISETPROPERTY, @TextColor, 00FFFFFFh
+
 
 
 Controls will also provide their own Get / Set functions for convenience that achieve the same results as sending the ``MUI_GETPROPERTY`` / ``MUI_SETPROPERTY`` messages.
@@ -50,19 +55,22 @@ The list of properties that can be accessed or changed will be stored in the .in
 
 The ``cbWndExtra`` field of the `WNDCLASSEX <https://msdn.microsoft.com/en-us/library/windows/desktop/ms633577%28v=vs.85%29.aspx>`_ Structure  is used for storing pointers to two blocks of memory. One is for internal properties relating to the control, the second is for public exposed properties that can be set by the user. ``cbWndExtra`` should be set to ``8`` (``16`` *for ModernUI x64*) at a minimum to accommodate this when registering the new controls class.
 
-Memory for both should be allocated during control creation (``WM_CREATE`` or ``WM_NCCREATE``) or after control creation, but before returning the control handle back to the user. 
+Memory for both should be allocated during control creation (`WM_CREATE <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-create>`_ or `WM_NCCREATE <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-nccreate>`_) or after control creation, but before returning the control handle back to the user. 
 The pointer to the block of memory for storing internal properties is stored at ``cbWndExtra +0`` and the pointer to the block of memory for storing external properties is stored at ``cbWndExtra +4`` (``cbWndExtra +8`` *for ModernUI x64*)
 
 The helper function ``MUIAllocMemProperties`` is provided to easily allocate the memory required and store it in the appropriate ``cbWndExtra`` offset. Here is an example from the ModernUI_CaptionBar (x86) control:
 
+
 ::
-	
-	.ELSEIF eax == WM_CREATE
-		Invoke _MUIAllocMemProperties, hWin, 0, SIZEOF _MUI_CAPTIONBAR_PROPERTIES ; internal properties
-		Invoke _MUIAllocMemProperties, hWin, 4, SIZEOF MUI_CAPTIONBAR_PROPERTIES ; external properties
-		Invoke _MUI_CaptionBarInit, hWin ; set some initial default property values
-		mov eax, 0
-		ret
+
+
+   .ELSEIF eax == WM_CREATE
+      Invoke _MUIAllocMemProperties, hWin, 0, SIZEOF _MUI_CAPTIONBAR_PROPERTIES ; internal properties
+      Invoke _MUIAllocMemProperties, hWin, 4, SIZEOF MUI_CAPTIONBAR_PROPERTIES ; external properties
+      Invoke _MUI_CaptionBarInit, hWin ; set some initial default property values
+      mov eax, 0
+      ret
+
 
 
 Internal properties (to be changed by control developer) are defined as constant values which can be passed to the ``_MUIGetIntProperty`` / ``_MUISetIntProperty`` functions.

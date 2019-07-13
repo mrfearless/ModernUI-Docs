@@ -4,9 +4,9 @@
 MUIPaintBackgroundImage 
 ========================
 
-Same as MUIPaintBackground, but with an image.
+MUIPaintBackgroundImage, hWin::ref:`MUIWND<MUIWND>`, BackColor::ref:`MUICOLORRGB<MUICOLORRGB>`, BorderColor::ref:`MUICOLORRGB<MUICOLORRGB>`, hImage::ref:`MUIIMAGE<MUIIMAGE>`, ImageHandleType::ref:`MUIIT<MUIIT>`, ImageLocation::ref:`MUIIL<MUIIL>`
 
-**MUIPaintBackgroundImage, hWin:HWND, Backcolor:COLORREF, BorderColor:COLORREF, hImage:HANDLE, ImageType:SIZE_T, ImageLocation:SIZE_T**
+Same as MUIPaintBackground, but with an image.
 
 **Parameters**
 
@@ -14,7 +14,7 @@ Same as MUIPaintBackground, but with an image.
 * [in] **Backcolor** - color to paint background with
 * [in] **BorderColor** - color to paint border with
 * [in] **hImage** - handle to image to paint on background
-* [in] **ImageType** - type of image used in **hImage**: ``MUIIT_NONE``, ``MUIIT_BMP``, ``MUIIT_ICO``, or ``MUIIT_PNG``
+* [in] **ImageHandleType** - type of image used in **hImage**: ``MUIIT_NONE``, ``MUIIT_BMP``, ``MUIIT_ICO``, or ``MUIIT_PNG``
 * [in] **ImageLocation** - location where to paint hImage: ``MUIIL_CENTER``, ``MUIIL_BOTTOMLEFT``, ``MUIIL_BOTTOMRIGHT``, ``MUIIL_TOPLEFT``, ``MUIIL_TOPRIGHT``, ``MUIIL_TOPCENTER``, or ``MUIIL_BOTTOMCENTER``
 
 **Return**

@@ -4,7 +4,7 @@
 MUIAllocStructureMemory 
 ========================
 
-**MUIAllocStructureMemory, lpPtrStructMem:DWORD_PTR, TotalItems:SIZE_T, ItemSize:SIZE_T**
+MUIAllocStructureMemory, PtrStructMem::ref:`POINTER<POINTER>`, TotalItems::ref:`MUIVALUE<MUIVALUE>`, ItemSize::ref:`MUIVALUE<MUIVALUE>`
 
 Dynamically allocates (or reallocates) memory for a specified array of structures and auto increments the total items in the array, and returns a pointer to the new current item in the array of structures.
 

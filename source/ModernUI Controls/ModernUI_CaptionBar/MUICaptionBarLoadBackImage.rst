@@ -1,8 +1,8 @@
 .. _MUICaptionBarLoadBackImage:
 
-========================
+==========================
 MUICaptionBarLoadBackImage 
-========================
+==========================
 
 **MUICaptionBarLoadBackImage**
 

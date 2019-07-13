@@ -4,14 +4,14 @@
 MUIGetParentBackgroundBitmap 
 ============================
 
-**MUIGetParentBackgroundBitmap, hControl:HWND**
+MUIGetParentBackgroundBitmap, hWin::ref:`MUIWND<MUIWND>`
 
 Gets parent's background bitmap from the parent dc, at the child's location and size. For use in setting background of child to 'transparent'.
 
 
 **Parameters**
 
-* [in] **hControl** - handle to the window to get the parent bitmap for
+* [in] **hWin** - handle to the window to get the parent bitmap for
 
 **Return**
 

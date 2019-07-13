@@ -4,7 +4,7 @@
 MUIGDIPlusDoubleBufferStart 
 ===========================
 
-**MUIGDIPlusDoubleBufferStart, hWin:HWND, pGraphics:HANDLE, lpBitmapHandle:LPHANDLE, lpGraphicsBuffer:LPHANDLE**
+MUIGDIPlusDoubleBufferStart, hWin::ref:`MUIWND<MUIWND>`, pGraphics::ref:`GPGRAPHICS<GPGRAPHICS>`, lpBitmapHandle::ref:`LPGPIMAGE<LPGPIMAGE>`, lpGraphicsBuffer::ref:`LPGPGRAPHICS<LPGPGRAPHICS>`
 
 Start Double Buffering for **GDI+**. Used in a `WM_PAINT <https://docs.microsoft.com/en-us/windows/win32/gdi/wm-paint>`_ event. Place after `BeginPaint <https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-beginpaint.html>`_ 
 

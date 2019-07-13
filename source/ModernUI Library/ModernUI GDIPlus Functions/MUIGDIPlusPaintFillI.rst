@@ -4,7 +4,7 @@
 MUIGDIPlusPaintFillI 
 ========================
 
-**MUIGDIPlusPaintFillI, pGraphics:HANDLE, lpFillRectI:LPRECT, FillColor:SIZE_T**
+MUIGDIPlusPaintFillI, pGraphics::ref:`GPGRAPHICS<GPGRAPHICS>`, lpFillRectI::ref:`LPRECT<LPRECT>`, FillColor::ref:`MUICOLORARGB<MUICOLORARGB>`
 
 Fills a rectangle, as specified by the **lpFillRectI** parameter which points to a ``RECT``, with **FillColor** which is a specific ARGB color, to a graphics context as specified by **pGraphics**.
 
@@ -13,7 +13,7 @@ Fills a rectangle, as specified by the **lpFillRectI** parameter which points to
 
 * [in] **pGraphics** - graphics context to paint the filled rectangle to
 * [in] **lpFillRectI** - points to a ``RECT`` that defines area to paint fill
-* [in] **FillColor** - color to paint fill
+* [in] **FillColor** - ARGB color to paint fill
 
 
 **Return**

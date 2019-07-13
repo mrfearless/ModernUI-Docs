@@ -1,8 +1,8 @@
 .. _MUIRegionButtonSetRegionPoly:
 
-========================
+============================
 MUIRegionButtonSetRegionPoly 
-========================
+============================
 
 **MUIRegionButtonSetRegionPoly**
 

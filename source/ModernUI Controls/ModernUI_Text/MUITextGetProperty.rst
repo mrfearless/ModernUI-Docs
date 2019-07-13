@@ -4,14 +4,14 @@
 MUITextGetProperty 
 ========================
 
-**MUITextGetProperty, hControl:DWORD, dwProperty:DWORD**
+MUITextGetProperty, hWin::ref:`MUIWND<MUIWND>`, Property::ref:`MUIPROPERTY<MUIPROPERTY>`
 
-Get the value of a property in the ModernUI_Text control
+Get the value of a property in the ModernUI_Text control. See :ref:`ModernUI_Text Properties<ModernUI_Text Properties>` for details on the properties available
 
 **Parameters**
 
-* [in] **hControl** - handle to the control
-* [in] **dwProperty** - a constant, representing the property to get
+* [in] **hWin** - handle to the ModernUI_Text control
+* [in] **Property** - the property to get. See :ref:`ModernUI_Text Properties<ModernUI_Text Properties>` for details on the properties available
 
 **Return**
 
@@ -28,5 +28,5 @@ Returns the value of the property or ``NULL`` otherwise
 
 **See Also**
 
-:ref:`MUITextSetProperty<MUITextSetProperty>`, :ref:`MUITextRegister<MUITextRegister>`, :ref:`MUITextCreate<MUITextCreate>`
+:ref:`MUITextSetProperty<MUITextSetProperty>`, :ref:`ModernUI_Text Properties<ModernUI_Text Properties>`
 

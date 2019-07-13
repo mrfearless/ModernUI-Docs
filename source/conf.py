@@ -103,6 +103,8 @@ exclude_patterns = ['_build*', 'Thumbs.db', '.DS_Store', 'README.md', '.git']
 #
 # show_authors = False
 
+#highlight_language = 'nasm'
+
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 

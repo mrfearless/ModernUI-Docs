@@ -92,9 +92,9 @@ ModernUI_Spinner Properties
 +------------------------------------------------------------------+--------------------------+
 | **Property**                                                     | **Type**                 |
 +------------------------------------------------------------------+--------------------------+
-| :ref:`@SpinnerBackColor<SpinnerBackColorProperty>`               | ``COLORREF``             |
+| :ref:`@SpinnerBackColor<SpinnerBackColorProperty>`               | ``MUICOLORRGB``          |
 +------------------------------------------------------------------+--------------------------+
-| :ref:`@SpinnerSpeed<SpinnerSpeedProperty>`                       | ``DWORD``                |
+| :ref:`@SpinnerSpeed<SpinnerSpeedProperty>`                       | ``MUIVALUE``             |
 +------------------------------------------------------------------+--------------------------+
 | :ref:`@SpinnerDllInstance<SpinnerDllInstanceProperty>`           | ``HINSTANCE``            |
 +------------------------------------------------------------------+--------------------------+
@@ -108,13 +108,13 @@ ModernUI_Spinner Property Descriptions
 
 **@SpinnerBackColor**
 
-Background color of the ModernUI_Spinner control. By default will try to obtain the color of the parent's background color otherwise will default to GetSysColor value returned by ``COLOR_WINDOW``
+Background color (:ref:`MUICOLORRGB<MUICOLORRGB>`) of the ModernUI_Spinner control. By default will try to obtain the color of the parent's background color otherwise will default to GetSysColor value returned by ``COLOR_WINDOW``
 
 .. _SpinnerSpeedProperty:
 
 **@SpinnerSpeed**
    
-Speed in milliseconds of the ModernUI_Spinner control frame animation. Default speed is ``80`` milliseconds
+A value (:ref:`MUIVALUE<MUIVALUE>`) indicating speed in milliseconds of the ModernUI_Spinner control frame animation. Default speed is ``80`` milliseconds
 
 .. _SpinnerDllInstanceProperty:
 

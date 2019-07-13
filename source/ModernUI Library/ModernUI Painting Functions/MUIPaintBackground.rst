@@ -4,7 +4,7 @@
 MUIPaintBackground 
 ========================
 
-**MUIPaintBackground, hWin:HWND, Backcolor:COLORREF, BorderColor:COLORREF**
+MUIPaintBackground, hWin::ref:`MUIWND<MUIWND>`, Backcolor::ref:`MUICOLORRGB<MUICOLORRGB>`, BorderColor::ref:`MUICOLORRGB<MUICOLORRGB>`
 
 Paint the background of the a window a specified ``COLORREF`` color. Optionally provide **BorderColor** for a border ``COLORREF`` color to draw. If **BorderColor** = 0, no border is drawn. If you require black for border, use ``1``, or ``MUI_RGBCOLOR(1,1,1)``
 

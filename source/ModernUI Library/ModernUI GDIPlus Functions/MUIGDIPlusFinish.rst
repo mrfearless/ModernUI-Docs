@@ -4,7 +4,7 @@
 MUIGDIPlusFinish 
 ========================
 
-**MUIGDIPlusFinish**
+MUIGDIPlusFinish
 
 Finish ModernUI **GDI+** framework (wrapper for `GdiplusShutdown <https://docs.microsoft.com/en-us/windows/win32/api/gdiplusinit/nf-gdiplusinit-gdiplusshutdown>`_). Placed after WinMain call before ExitProcess or during exit of a ModernUI control during a `WM_DESTROY <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-destroy>`_ or a `WM_NCDESTROY <https://docs.microsoft.com/en-us/windows/win32/winmsg/wm-ncdestroy>`_ event
 

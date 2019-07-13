@@ -1,8 +1,8 @@
 .. _MUIRegionButtonSetRegionBitmap:
 
-========================
+==============================
 MUIRegionButtonSetRegionBitmap 
-========================
+==============================
 
 **MUIRegionButtonSetRegionBitmap**
 
