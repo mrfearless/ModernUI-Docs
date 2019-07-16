@@ -61,27 +61,34 @@ ModernUI_SmartPanel Functions
 ModernUI_SmartPanel Messages
 -----------------------------
 
-+---------------------------+-------------------------------------------------------------+
-| **Message**               | **Description**                                             |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_REGISTERPANEL      | Registers a dialog window (``HWND``) with the SmartPanel    |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_SETCURRENTPANEL    | Sets the current active panel                               |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_GETCURRENTPANEL    | Gets the current panel's index                              |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_NEXTPANEL          | Moves to next panel that is registered and shows it         |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_PREVPANEL          | Moves to previous panel that is registered and shows it     |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_GETTOTALPANELS     | Gets total panels registered with the SmartPanel control    |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_SETISDLGMSGVAR     | Variable to receive current panel handle                    |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_GETPANELPARAM      | Get lParam of panel - custom user data                      |
-+---------------------------+-------------------------------------------------------------+
-| MUISPM_SETPANELPARAM      | Sets the lParam of a registered panel - custom user data    |
-+---------------------------+-------------------------------------------------------------+
+.. toctree::
+   :hidden:
+   :glob:
+   
+   MUISPM*
+
+
++-------------------------------------------------------+-------------------------------------------------------------+
+| **Message**                                           | **Description**                                             |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_GETCURRENTPANEL<MUISPM_GETCURRENTPANEL>` | Gets the current panel's index                              |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_GETPANELPARAM<MUISPM_GETPANELPARAM>`     | Get lParam of panel - custom user data                      |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_GETTOTALPANELS<MUISPM_GETTOTALPANELS>`   | Gets total panels registered with the SmartPanel control    |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_NEXTPANEL<MUISPM_NEXTPANEL>`             | Moves to next panel that is registered and shows it         |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_PREVPANEL<MUISPM_PREVPANEL>`             | Moves to previous panel that is registered and shows it     |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_REGISTERPANEL<MUISPM_REGISTERPANEL>`     | Registers a dialog window (``HWND``) with the SmartPanel    |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_SETCURRENTPANEL<MUISPM_SETCURRENTPANEL>` | Sets the current active panel                               |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_SETISDLGMSGVAR<MUISPM_SETISDLGMSGVAR>`   | Variable to receive current panel handle                    |
++-------------------------------------------------------+-------------------------------------------------------------+
+| :ref:`MUISPM_SETPANELPARAM<MUISPM_SETPANELPARAM>`     | Sets the lParam of a registered panel - custom user data    |
++-------------------------------------------------------+-------------------------------------------------------------+
 
 
 .. _ModernUI_SmartPanel Properties:
