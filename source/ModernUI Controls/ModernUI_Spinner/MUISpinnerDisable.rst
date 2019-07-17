@@ -4,27 +4,25 @@
 MUISpinnerDisable 
 ========================
 
-**MUISpinnerDisable**
+MUISpinnerDisable, hWin::ref:`MUIWND<MUIWND>`
 
-
+Disables the spinner animation and hides the ModernUI_Spinner control
 
 **Parameters**
 
-* [in] **1**
-* [in] **2**
-* [in] **3**
+* [in] **hWin** - handle to the ModernUI_Spinner control
 
 **Return**
 
-Returns ``TRUE`` if successful, or ``FALSE`` otherwise
+None
 
 **Example**
 
 ::
 
-
+   Invoke MUISpinnerDisable, hSpinner
 
 **See Also**
 
-:ref:` `, :ref:` ` 
+:ref:`MUISpinnerEnable<MUISpinnerEnable>`, :ref:`MUISpinnerPause<MUISpinnerPause>`, :ref:`MUISpinnerResume<MUISpinnerResume>`
 

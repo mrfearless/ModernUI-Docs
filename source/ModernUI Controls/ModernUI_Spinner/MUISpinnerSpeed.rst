@@ -4,27 +4,26 @@
 MUISpinnerSpeed 
 ========================
 
-**MUISpinnerSpeed**
+MUISpinnerSpeed, hWin::ref:`MUIWND<MUIWND>`, MillisecSpeed:MUIVALUE
 
-
+Sets the spinner animation speed (in milliseconds)
 
 **Parameters**
 
-* [in] **1**
-* [in] **2**
-* [in] **3**
+* [in] **hWin** - handle to the ModernUI_Spinner control
+* [in] **MillisecSpeed**
 
 **Return**
 
-Returns ``TRUE`` if successful, or ``FALSE`` otherwise
+None
 
 **Example**
 
 ::
 
-
+   Invoke MUISpinnerSpeed, hSpinner, 100
 
 **See Also**
 
-:ref:` `, :ref:` ` 
+:ref:`MUISpinnerGetProperty<MUISpinnerGetProperty>`,  :ref:`MUISpinnerSetProperty<MUISpinnerSetProperty>` 
 

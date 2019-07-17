@@ -4,15 +4,13 @@
 MUISpinnerResume 
 ========================
 
-**MUISpinnerResume**
+MUISpinnerResume, hWin::ref:`MUIWND<MUIWND>`
 
-
+Resume the spinner after it has been paused by :ref:`MUISpinnerPause<MUISpinnerPause>`
 
 **Parameters**
 
-* [in] **1**
-* [in] **2**
-* [in] **3**
+* [in] **hWin** - handle to the ModernUI_Spinner control
 
 **Return**
 
@@ -22,9 +20,9 @@ Returns ``TRUE`` if successful, or ``FALSE`` otherwise
 
 ::
 
-
+   Invoke MUISpinnerResume, hSpinner
 
 **See Also**
 
-:ref:` `, :ref:` ` 
+:ref:`MUISpinnerPause<MUISpinnerPause>`, :ref:`MUISpinnerEnable<MUISpinnerEnable>`, :ref:`MUISpinnerDisable<MUISpinnerDisable>`
 
