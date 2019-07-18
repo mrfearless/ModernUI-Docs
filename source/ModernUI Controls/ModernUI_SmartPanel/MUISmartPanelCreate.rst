@@ -41,7 +41,7 @@ Returns handle to newly created ModernUI_SmartPanel control (``MUIWND``) if succ
 
 **Example**
 
-.. code-block:: nasm
+::
 
    Invoke MUISmartPanelCreate, hWin, 10, 10, 1024, 800, IDC_SMARTPANEL, MUISPS_NOSLIDE
 

@@ -4,15 +4,13 @@
 MUIProgressBarStep 
 ========================
 
-**MUIProgressBarStep**
+MUIProgressBarStep, hWin::ref:`MUIWND<MUIWND>`
 
-
+Incrementally moves the progressbar
 
 **Parameters**
 
-* [in] **1**
-* [in] **2**
-* [in] **3**
+* [in] **hWin** - handle to the ModernUI_ProgressBar control
 
 **Return**
 
@@ -22,9 +20,9 @@ Returns ``TRUE`` if successful, or ``FALSE`` otherwise
 
 ::
 
-
+   Invoke MUIProgressBarStep, hProgressBar
 
 **See Also**
 
-:ref:` `, :ref:` ` 
+:ref:`MUIProgressBarSetPercent<MUIProgressBarSetPercent>`
 

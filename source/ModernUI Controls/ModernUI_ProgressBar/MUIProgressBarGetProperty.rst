@@ -4,27 +4,28 @@
 MUIProgressBarGetProperty 
 =========================
 
-**MUIProgressBarGetProperty**
+MUIProgressBarGetProperty, hWin::ref:`MUIWND<MUIWND>`, Property::ref:`MUIPROPERTY<MUIPROPERTY>`
 
-
+Get the value of a property in a ModernUI_ProgressBar control. See :ref:`ModernUI_ProgressBar Properties<ModernUI_ProgressBar Properties>` for details on the properties available
 
 **Parameters**
 
-* [in] **1**
-* [in] **2**
-* [in] **3**
+* [in] **hWin** - handle to the ModernUI_ProgressBar control
+* [in] **Property** - the property to get. See :ref:`ModernUI_ProgressBar Properties<ModernUI_ProgressBar Properties>` for details on the properties available
 
 **Return**
 
-Returns ``TRUE`` if successful, or ``FALSE`` otherwise
+Returns the value of the property or ``NULL`` otherwise
 
 **Example**
 
 ::
 
-
+   LOCAL ProgressColor:DWORD
+   
+   Invoke MUIProgressBarGetProperty, hProgressBar, @ProgressBarProgressColor
+   mov ProgressColor, eax
 
 **See Also**
 
-:ref:` `, :ref:` ` 
-
+:ref:`MUIProgressBarSetProperty<MUIProgressBarSetProperty>`, :ref:`ModernUI_ProgressBar Properties<ModernUI_ProgressBar Properties>`
